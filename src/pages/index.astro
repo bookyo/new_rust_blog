@@ -22,11 +22,11 @@ if(lists.length < limit) {
 }
 ---
 
-<Layout title="VAM 3D Blog">
+<Layout title={config.title}>
 	<main>
-		<h1>欢迎来到 <span class="text-gradient">VAM 3D blog</span></h1>
+		<h1>欢迎来到 <span class="text-gradient">{config.title}</span></h1>
 		<p class="instructions bg-sky-800">
-			VAM 3D Blog乃发布免费VAM 3D资源的非常简单的博客。
+			{config.description}
 		</p>
 		<div class="flex flex-wrap" id="content-box">
 			{lists.map((list) => <BlogCard blog={list} />)}
